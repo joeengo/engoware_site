@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,200;0,300;0,400;1,100&display=swap');
+
+/*
+    im sorry for actual webdevs reading this, this is horrible.
+*/
+
+body {
+    background-color: #0d0f22;
+    color: rgb(233, 233, 233);
+    font-family: 'Azeret Mono', monospace;
+    font-size: 20px;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 16vw;
+    font-weight: light;
+    margin-top: 10.5%;
+}
+
+.small-title {
+    font-size: 8vw;
+    font-weight: light;
+    margin-top: 0%;
+}
+
+.colorwave {
+    animation: colorWaveText 3s ease-in-out 0s infinite;
+}
+
+.link {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.desc {
+    font-size: 30px;
+    font-weight: light;
+}
+
+.left {
+    text-align: left;
+    align-items: left;
+    margin-left: -3vh;
+}
+
+.right {
+    text-align: left;
+    align-items: left;
+    margin-left: 10vh;
+}
+
+.topbardiv {
+    background-color: #0a0a1b;
+    padding: 5px;
+    margin-top: -0.7vh;
+    padding: 5px;
+}
+
+.topbar > li {
+    background-color: #0a0a1b;
+    color: rgb(233, 233, 233);
+    font-family: 'Azeret Mono', monospace;
+    display: inline;
+    padding: 10px;
+}
+
+.topbar > li:hover {
+    background-color: #0d0f22;
+    color: rgb(233, 233, 233);
+    transform: scale(1.1);
+    animation: hover .4s ease-out;
+}
+
+@keyframes colorWaveText {
+    0% {
+        color: #0099ff;
+    }
+    50% {
+        color: #4053fc;
+    }
+    100% {
+        color: #0099ff;
+    }
+}
+
+@keyframes hover {
+    0% {
+        font-size: 20px;
+    }
+    50% {
+        font-size: 25px;
+    }
+    100% {
+        font-size: 20px;
+    }
+}
+
+.changelogs {
+    margin: 9px;
+    padding: 0px;
+    background-color: #0a0a1b;
+}
+
+.changelogs > ul {
+    list-style-type: none;
+    padding: 7px;
+    margin: 0px;
+}
+
+.changelogs > ul > p {
+    color: rgb(233, 233, 233);
+    font-family: 'Azeret Mono', monospace;
+    font-size: 18px;
+    margin: 0px;
+    padding: 3px;
+}
+
+.vertext {
+    margin-top: 40px;
+}
